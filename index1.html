@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link href="./output1.css" rel="stylesheet">
+</head>
+<body class="flex justify-center items-center h-screen bg-[#0c152b]">
+    <div class="flex flex-col justify-evenly items-center w-100 h-3/5 rounded-2xl bg-[#1c293a]">
+        <div class="mt-8 flex justify-center text-3xl font-bold text-white">
+            Currency Converter
+        </div>
+        <form id="converter_form" class="flex-col">
+                <div class="flex-col text-white">
+                    <label for="amount" class="mr-4 text-gray-500 text-sm">Amount</label>
+                    <div><input type="number" class="w-60 bg-white/35 flex rounded-lg h-8 p-2" id="amount" placeholder="Enter amount" required></div>
+                </div>
+                <div class="flex-col text-white">
+                    <label for="from_currency" class="mr-4 text-gray-500 text-sm">From</label>
+                    <div>
+                        <select class="bg-white/35 flex rounded-lg h-8 w-60 p-1 text-sm" id="from_currency">
+                        </select>
+                    </div>
+                </div>
+                <div class="flex-col text-white">
+                    <label for="to_currency" class="mr-4 text-gray-500 text-sm">To</label>
+                    <div>
+                        <select class="bg-white/35 flex rounded-lg h-8 w-60 p-1 text-sm" id="to_currency">
+                        </select>
+                    </div>
+                </div>
+                <button class="bg-[#3676e2] text-white flex items-center justify-center w-60 rounded-lg h-8 mt-12 cursor-pointer" id="convert">
+                    Convert
+                </button>
+        </form>
+        <div class="text-green-500 mt-8 flex justify-center" id="result">
+        </div>
+    </div>
+    <script src="./script1.js"></script>
+</body>
+</html>
