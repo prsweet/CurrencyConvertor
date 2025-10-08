@@ -38,6 +38,8 @@ bower_components
 build/Release
 
 # Dependency directories
+package.json
+package-lock.json
 node_modules/
 jspm_packages/
 
@@ -48,7 +50,7 @@ web_modules/
 *.tsbuildinfo
 
 # Optional npm cache directory
-.npm
+.npmadd
 
 # Optional eslint cache
 .eslintcache
